@@ -1,0 +1,11 @@
+{
+    "identifier": "llc.snow.dart",
+    "name": "Dart",
+    "organization": "Snow Developments",
+    "description": "Advanced Dart language and Flutter support for Nova",
+    "version": "1.0",
+    "categories": ["completions", "languages"],
+    "license": "MIT",
+    
+    "min_runtime": "3.0"
+}
