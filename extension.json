@@ -14,5 +14,10 @@
     "activationEvents": [
         "onLanguage:dart",
         "onWorkspaceContains:pubspec.yaml"
-    ]
+    ],
+    
+    "entitlements": {
+        "process": true,
+        "filesystem": "readonly"
+    }
 }
