@@ -6,6 +6,8 @@
     "version": "1.0",
     "categories": ["completions", "languages"],
     "license": "MIT",
+    "repository": "https://github.com/snow-developments/nova-dart",
+    "bugs": "https://github.com/snow-developments/nova-dart/issues",
     
     "min_runtime": "3.0",
     
