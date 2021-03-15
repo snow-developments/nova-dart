@@ -10,18 +10,18 @@ Syntax highlighting and autocompletion for [Dart](https://dartlang.org) and also
 
 ## Language Support
 
-The following features of the Dart language are supported:
+### Dart
 
-- Lorem
-- Ipsum
-- Dolor
+Syntax highlighting support for:
 
-Support for:
-
-- Sit
-- Amet 
+- [Documentation Comments](https://dart.dev/guides/language/effective-dart/documentation#doc-comments)
+- [Conditional Expressions](https://dart.dev/guides/language/language-tour#conditional-expressions) (aka Ternary Operator)
 
 is planned for a future update.
+
+### pubspec.yaml
+
+Autocompletion for package [pubspec.yaml](https://dart.dev/tools/pub/pubspec) files is planned for a future update.
 
 ## License
 
