@@ -10,7 +10,7 @@
     "bugs": "https://github.com/snow-developments/nova-dart/issues",
     "funding": "https://github.com/sponsors/chances",
     
-    "min_runtime": "3.0",
+    "min_runtime": "4.0",
     
     "activationEvents": [
         "onLanguage:dart",
