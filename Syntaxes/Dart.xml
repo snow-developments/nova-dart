@@ -71,21 +71,22 @@
             </ends-with>
             <subscopes>
                 <scope name="dart.meta.declaration" optional="true">
-                    <expression>\b(as|show|hide)\\b</expression>
+                    <expression>\b(as|show|hide)\b</expression>
                     <capture number="1" name="dart.keyword.other.import" />
-                    
-                    <include syntax="self" collection="strings" optional="true" />
-                    <include syntax="self" collection="comments" optional="true" />
                 </scope>
+                <!-- TODO: `strings` collection -->
+                <!-- <include syntax="self" collection="strings" optional="true" /> -->
+                <include syntax="self" collection="comments" optional="true" />
             </subscopes>
         </scope>
         
         <include syntax="self" collection="comments" optional="true" />
-        <include syntax="self" collection="punctuatuion" optional="true" />
+        <include syntax="self" collection="punctuation" optional="true" />
         <include syntax="self" collection="annotations" optional="true" />
         <include syntax="self" collection="keywords" optional="true" />
         <include syntax="self" collection="constants-and-special-vars" optional="true" />
-        <include syntax="self" collection="strings" optional="true" />
+        <!-- TODO: `strings` collection -->
+        <!-- <include syntax="self" collection="strings" optional="true" /> -->
     </scopes>
     
     <collections>
@@ -100,7 +101,7 @@
         <!-- TODO: Add `comments-doc-oldschool` and `comments-doc` -->
         <collection name="comments-inline">
             <scope name="dart.comment.line.double-slash" spell-check="true">
-                <expression>((//).*)$</expression>
+                <expression>((\/\/).*)$</expression>
             </scope>
             
             <include syntax="self" collection="comments-block" optional="true" />
@@ -108,10 +109,10 @@
         <collection name="comments-block">
             <scope name="dart.comment.block" spell-check="true">
                 <starts-with>
-                    <expression>/\\*</expression>
+                    <expression>\/\*</expression>
                 </starts-with>
                 <ends-with>
-                    <expression>\\*/</expression>
+                    <expression>\*\/</expression>
                 </ends-with>
                 
                 <include syntax="self" collection="comments-block" optional="true" />
@@ -147,7 +148,7 @@
                 <expression>([_$]*[A-Z][a-zA-Z0-9_$]*|bool\\b|num\\b|int\\b|double\\b|dynamic\\b)</expression>
             </scope>
             <scope name="dart.entity.name.function">
-                <expression>([_$]*[a-z][a-zA-Z0-9_$]*)(<|\\(|\\s+=>)</expression>
+                <expression>([_$]*[a-z][a-zA-Z0-9_$]*)(&lt;|\\(|\\s+=>)</expression>
                 <capture number="1" name="dart.entity.name.function" />
             </scope>
         </collection>
@@ -218,10 +219,10 @@
             <!-- TODO: `keyword.operator` scope -->
             <!-- TODO: `keyword.operator.ternary` scope -->
             <scope name="dart.keyword.operator.bitwise">
-                <expression>(<<|>>>?|~|\^|\||&)</expression>
+                <expression>(&lt;&lt;|&gt;&gt;&gt;?|~|\^|\||&amp;)</expression>
             </scope>
             <scope name="dart.keyword.operator.assignment.bitwise">
-                <expression>((&|\\^|\\||<<|>>>?)=)</expression>
+                <expression>((&amp;|\\^|\\||&lt;&lt;|&gt;&gt;&gt;?)=)</expression>
             </scope>
             <scope name="dart.keyword.operator.closure">
                 <expression>=></expression>
@@ -230,8 +231,8 @@
                 <strings>
                     <string>==</string>
                     <string>!=</string>
-                    <string><=?</string>
-                    <string>>=?</string>
+                    <string>&lt;=?</string>
+                    <string>&gt;=?</string>
                 </strings>
             </scope>
             <scope name="dart.keyword.operator.assignment.arithmetic">
@@ -243,7 +244,8 @@
             </scope>
             <scope name="dart.keyword.operator.increment-decrement">
                 <strings>
-                    <string>--</string>
+                    <!-- Double hyphen -->
+                    <string>&#8208;&#8208;</string>
                     <string>++</string>
                 </strings>
             </scope>
@@ -260,11 +262,12 @@
             <scope name="dart.keyword.operator.logical">
                 <strings>
                     <string>!</string>
-                    <string>&&</string>
+                    <!-- Double ampersands -->
+                    <string>&amp;&amp;</string>
                     <string>||</string>
                 </strings>
             </scope>
-            <scope name="dar.storage.modifier">
+            <scope name="dart.storage.modifier">
                 <strings>
                     <string>static</string>
                     <string>final</string>
@@ -273,7 +276,7 @@
                     <string>late</string>
                 </strings>
             </scope>
-            <scope name="dar.storage.type.primitive">
+            <scope name="dart.storage.type.primitive">
                 <strings>
                     <string>void</string>
                     <string>var</string>
