@@ -89,7 +89,7 @@
     </scopes>
     
     <collections>
-        <!-- TODO: Add `dartdoc` -->
+        <!-- TODO: Add `dartdoc` collection -->
         <!-- Comments -->
         <collection name="comments">
             <!-- TODO: Add `dart.punctuation.definition.dart`? -->
@@ -217,10 +217,23 @@
             </scope>
             <!-- TODO: `keyword.operator` scope -->
             <!-- TODO: `keyword.operator.ternary` scope -->
-            <!-- TODO: `keyword.operator.bitwise` scope -->
-            <!-- TODO: `keyword.operator.assignment.bitwise` scope -->
-            <!-- TODO: `keyword.operator.closure` scope -->
-            <!-- TODO: `keyword.operator.comparison` scope -->
+            <scope name="dart.keyword.operator.bitwise">
+                <expression>(<<|>>>?|~|\^|\||&)</expression>
+            </scope>
+            <scope name="dart.keyword.operator.assignment.bitwise">
+                <expression>((&|\\^|\\||<<|>>>?)=)</expression>
+            </scope>
+            <scope name="dart.keyword.operator.closure">
+                <expression>=></expression>
+            </scope>
+            <scope name="dart.keyword.operator.comparison">
+                <strings>
+                    <string>==</string>
+                    <string>!=</string>
+                    <string><=?</string>
+                    <string>>=?</string>
+                </strings>
+            </scope>
             <scope name="dart.keyword.operator.assignment.arithmetic">
                 <expression>([+*/%-]|\\~)=</expression>
                 <capture number="1" name="dart.keyword.operator.arithmetic" />
