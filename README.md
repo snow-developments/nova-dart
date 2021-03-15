@@ -16,6 +16,7 @@ Syntax highlighting support for:
 
 - [Documentation Comments](https://dart.dev/guides/language/effective-dart/documentation#doc-comments)
 - [Conditional Expressions](https://dart.dev/guides/language/language-tour#conditional-expressions) (aka Ternary Operator)
+- Strings & String Interpolation
 
 is planned for a future update.
 
