@@ -20,6 +20,8 @@ Syntax highlighting support for:
 
 is planned for a future update.
 
+#### Autocomplete
+
 ### pubspec.yaml
 
 Autocompletion for package [pubspec.yaml](https://dart.dev/tools/pub/pubspec) files is planned for a future update.
