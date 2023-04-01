@@ -1,6 +1,6 @@
 # Dart & Flutter for Nova
 
-> ⚠️ Use Matt Cook's excellent [Dart extension](nova://extension/?id=sciencefidelity.dart&name=Dart).
+> ⚠️ Use Matt Cook's excellent [Dart extension](https://extensions.panic.com/extensions/sciencefidelity/sciencefidelity.dart).
 
 Syntax highlighting and autocompletion for [Dart](https://dartlang.org) and also advanced support for [Flutter](https://flutter.dev).
 
