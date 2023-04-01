@@ -1,8 +1,6 @@
-<!--
-As you edit this README template, you can preview your changes by selecting **Extensions → Activate Project as Extension**, opening the Extension Library, and selecting "Dart" in the sidebar.
--->
-
 # Dart & Flutter for Nova
+
+> ⚠️ Use Matt Cook's excellent [Dart extension](nova://extension/?id=sciencefidelity.dart&name=Dart).
 
 Syntax highlighting and autocompletion for [Dart](https://dartlang.org) and also advanced support for [Flutter](https://flutter.dev).
 
